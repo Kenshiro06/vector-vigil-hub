@@ -14,7 +14,96 @@ export type Database = {
   }
   public: {
     Tables: {
-      [_ in never]: never
+      disease_indices: {
+        Row: {
+          calculated_at: string
+          calculated_value: number | null
+          disease: string
+          id: string
+          index_type: string
+          input_data: Json
+          user_id: string
+        }
+        Insert: {
+          calculated_at?: string
+          calculated_value?: number | null
+          disease: string
+          id?: string
+          index_type: string
+          input_data: Json
+          user_id: string
+        }
+        Update: {
+          calculated_at?: string
+          calculated_value?: number | null
+          disease?: string
+          id?: string
+          index_type?: string
+          input_data?: Json
+          user_id?: string
+        }
+        Relationships: []
+      }
+      images: {
+        Row: {
+          description: string | null
+          detection_results: Json | null
+          disease: string
+          file_name: string
+          file_path: string
+          id: string
+          uploaded_at: string
+          user_id: string
+        }
+        Insert: {
+          description?: string | null
+          detection_results?: Json | null
+          disease: string
+          file_name: string
+          file_path: string
+          id?: string
+          uploaded_at?: string
+          user_id: string
+        }
+        Update: {
+          description?: string | null
+          detection_results?: Json | null
+          disease?: string
+          file_name?: string
+          file_path?: string
+          id?: string
+          uploaded_at?: string
+          user_id?: string
+        }
+        Relationships: []
+      }
+      profiles: {
+        Row: {
+          created_at: string
+          id: string
+          role: string
+          updated_at: string
+          user_id: string
+          username: string
+        }
+        Insert: {
+          created_at?: string
+          id?: string
+          role?: string
+          updated_at?: string
+          user_id: string
+          username: string
+        }
+        Update: {
+          created_at?: string
+          id?: string
+          role?: string
+          updated_at?: string
+          user_id?: string
+          username?: string
+        }
+        Relationships: []
+      }
     }
     Views: {
       [_ in never]: never
