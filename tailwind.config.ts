@@ -57,6 +57,16 @@ export default {
           border: "hsl(var(--sidebar-border))",
           ring: "hsl(var(--sidebar-ring))",
         },
+        malaria: {
+          DEFAULT: "hsl(var(--malaria))",
+          foreground: "hsl(var(--malaria-foreground))",
+        },
+        leptospirosis: {
+          DEFAULT: "hsl(var(--leptospirosis))",
+          foreground: "hsl(var(--leptospirosis-foreground))",
+        },
+        success: "hsl(var(--success))",
+        warning: "hsl(var(--warning))",
       },
       borderRadius: {
         lg: "var(--radius)",
